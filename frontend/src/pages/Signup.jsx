@@ -22,7 +22,7 @@ const Signup = () => {
     setError(null);
     
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/signup", formData);
+      const response = await axios.post("https://hospital-management-system-tfw9.onrender.com/api/auth/signup", formData);
       setMessage(response.data.successmessage);
     } catch (error) {
       setError(error.response?.data?.errormessage || "Signup failed");

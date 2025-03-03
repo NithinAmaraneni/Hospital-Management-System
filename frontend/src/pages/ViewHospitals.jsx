@@ -9,7 +9,7 @@ const ViewHospitals = () => {
   useEffect(() => {
     const fetchHospitals = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/hospitals");
+        const response = await axios.get("https://hospital-management-system-tfw9.onrender.com/api/hospitals");
         setHospitals(response.data);
       } catch (err) {
         setError("Error fetching hospitals");

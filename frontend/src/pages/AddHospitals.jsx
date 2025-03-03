@@ -27,7 +27,7 @@ const AddHospitals = () => {
     const newHospital = { name, city, imageUrl, specialities, rating };
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/add-hospital", newHospital);
+      const response = await axios.post("https://hospital-management-system-tfw9.onrender.com/api/auth/add-hospital", newHospital);
       setMessage(response.data.message);
       // Reset form
       setName("");

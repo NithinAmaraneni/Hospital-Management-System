@@ -30,7 +30,7 @@ const Login = ({ handleLoginState }) => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", trimmedData, { withCredentials: true });
+      const response = await axios.post("https://hospital-management-system-tfw9.onrender.com/api/auth/login", trimmedData, { withCredentials: true });
 
       alert(response.data.successmessage);
       

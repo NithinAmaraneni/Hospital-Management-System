@@ -7,7 +7,7 @@ const Navbar = ({ isAdmin, isLoggedIn, setIsLoggedIn }) => {
 
   const handleSignOut = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/signOut", {
+      const response = await fetch("https://hospital-management-system-tfw9.onrender.com/api/auth/signOut", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
